@@ -1,0 +1,7 @@
+#!/bin/sh                                                                       
+# This script will run the main.py and then set your background to the resulting image
+# This file must be placed in /usr/bin and have executable permissions 'chmod 777 background' 
+# Will do the job. Also ensure that this points to the main.py on your system and the appropriate 
+# Directory for your image. If done correctly this script will be runnable from dmenu.
+python3 /home/rob/scripts/Background/main.py                        
+feh --bg-scale ~/Downloads/NewBack.jpg 
