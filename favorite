@@ -1,0 +1,5 @@
+#!/bin/sh                                                                       
+# A little script to save your favorite images
+
+NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)      
+mv /home/rob/Downloads/NewBack.jpg /home/rob/Pictures/favorites/$NEW_UUID.jpg 
